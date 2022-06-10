@@ -8,9 +8,15 @@ public class Support {
     private String Reference;
 
     public Support() {
-        Auteur = Utils.scanString("Quelle est l'auteur ?");
-        Titre = Utils.scanString("Quelle est le titre ?");
-        Reference = Utils.scanString("Quelle est la référence ?");
+    }
+
+    public Support(boolean sc) {
+        if (sc) {
+            Auteur = Utils.scanString("Quelle est l'auteur ?");
+            Titre = Utils.scanString("Quelle est le titre ?");
+            Reference = Utils.scanString("Quelle est la référence ?");
+        }
+
     }
 
     @Override

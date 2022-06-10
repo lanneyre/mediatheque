@@ -7,7 +7,14 @@ public class Livre extends Support {
 
     public Livre() {
         super();
-        NbPage = Utils.scanInteger("Combien de page ?");
+    }
+
+    public Livre(boolean sc) {
+        super(sc);
+        if (sc) {
+            NbPage = Utils.scanInteger("Combien de page ?");
+        }
+
     }
 
     @Override

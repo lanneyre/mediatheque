@@ -5,9 +5,15 @@ import Utils.Utils;
 public class Dvd extends Multimedia {
     private String Bonus;
 
+    public Dvd(boolean sc) {
+        super(sc);
+        if (sc) {
+            Bonus = Utils.scanString("Quel est le bonus ?");
+        }
+    }
+
     public Dvd() {
         super();
-        Bonus = Utils.scanString("Quel est le bonus ?");
     }
 
     @Override

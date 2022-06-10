@@ -5,9 +5,15 @@ import Utils.Utils;
 public class Multimedia extends Support {
     private String Duree;
 
+    public Multimedia(boolean sc) {
+        super(sc);
+        if (sc) {
+            Duree = Utils.scanString("Quelle est la durée ?");
+        }
+    }
+
     public Multimedia() {
         super();
-        Duree = Utils.scanString("Quelle est la durée ?");
     }
 
     public String getDuree() {

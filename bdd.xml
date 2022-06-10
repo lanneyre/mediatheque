@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.15" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="Support.Livre">
+    <void property="auteur">
+     <string>Moi</string>
+    </void>
+    <void property="nbPage">
+     <int>42</int>
+    </void>
+    <void property="reference">
+     <string>ego</string>
+    </void>
+    <void property="titre">
+     <string>moi</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Support.Dvd">
+    <void property="auteur">
+     <string>Toi</string>
+    </void>
+    <void property="bonus">
+     <string>Oui</string>
+    </void>
+    <void property="duree">
+     <string>42</string>
+    </void>
+    <void property="reference">
+     <string>ego</string>
+    </void>
+    <void property="titre">
+     <string>Toi</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Support.CD">
+    <void property="auteur">
+     <string>lui</string>
+    </void>
+    <void property="duree">
+     <string>5</string>
+    </void>
+    <void property="nbPlage">
+     <int>1</int>
+    </void>
+    <void property="reference">
+     <string>ou pas</string>
+    </void>
+    <void property="titre">
+     <string>elle</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Support.Livre">
+    <void property="auteur">
+     <string>test</string>
+    </void>
+    <void property="nbPage">
+     <int>42</int>
+    </void>
+    <void property="reference">
+     <string>test</string>
+    </void>
+    <void property="titre">
+     <string>test</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

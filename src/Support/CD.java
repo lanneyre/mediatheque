@@ -5,9 +5,16 @@ import Utils.Utils;
 public class CD extends Multimedia {
     private int NbPlage;
 
+    public CD(boolean sc) {
+        super(sc);
+        if (sc) {
+            NbPlage = Utils.scanInteger("Combien de plage ?");
+        }
+
+    }
+
     public CD() {
         super();
-        NbPlage = Utils.scanInteger("Combien de plage ?");
     }
 
     @Override
