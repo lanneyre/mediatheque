@@ -19,6 +19,13 @@ public class Utils {
 		return ret;
 	}
 
+	/**
+	 * fonction qui demande l'entrée d'une chaîne de caractères à l'utilisateur
+	 * puis, à l'aide d'un Scanner, récupère le nombre entrée
+	 * 
+	 * @return le chiffre obtenue
+	 * @param la question posée à l'utilisateur
+	 */
 	public static Integer scanInteger(String question) {
 		System.out.println(question);
 		Integer ret;
