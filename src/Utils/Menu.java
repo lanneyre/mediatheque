@@ -3,6 +3,7 @@ package Utils;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,9 +17,16 @@ public class Menu {
         // supports = new ArrayList<Support>();
         try {
             this.load();
-        } catch (Exception e) {
-            // TODO: handle exception
+        }catch(FileNotFoundException e) {
+        	//si le fichier n'existe pas encore, on est sans doute sur le premier lancement
+        	System.out.println("Bienvenue dans votre première utilisation de l'appli Mediatheque !");
+        	//si on ne trouve pas de fichier bdd.xml on crée une liste vide pour travailler avec
+            supports = new ArrayList<Support>();
+        }catch (Exception e) {
+            // si on a une exception autre qu'un fichier non trouvé
             System.out.println("Une erreur est survenue");
+            System.out.println(e.getMessage());
+            
         }
 
     }
@@ -76,6 +84,7 @@ public class Menu {
     }
 
     public void load() throws IOException {
+    	//crée un flux de lecture depuis un fichier nommé bdd.xml s'il existe
         FileInputStream fis = new FileInputStream("bdd.xml");
         XMLDecoder decoder = new XMLDecoder(fis);
         supports = (ArrayList<Support>) decoder.readObject();
