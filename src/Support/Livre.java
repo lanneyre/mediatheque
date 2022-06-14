@@ -7,15 +7,24 @@ public class Livre extends Support {
 
     public Livre() {
         super();
+        
     }
+    
+    
 
-    public Livre(boolean sc) {
-        super(sc);
-        if (sc) {
-            NbPage = Utils.scanInteger("Combien de page ?");
-        }
+    public Livre(String auteur, String titre, String reference, int nbPage) {
+		super(auteur, titre, reference);
+		this.NbPage = nbPage;
+	}
 
-    }
+
+
+	// méthode qui remplit les champs d'un objet Livre
+ 	public void fillSupport() {
+ 		super.fillSupport();
+ 		NbPage = Utils.scanInteger("Combien de pages ?");
+
+ 	}
 
     @Override
     public String toString() {

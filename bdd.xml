@@ -90,5 +90,94 @@
     </void>
    </object>
   </void>
+  <void method="add">
+   <object class="Support.Livre">
+    <void property="auteur">
+     <string>fkfk</string>
+    </void>
+    <void property="nbPage">
+     <int>34</int>
+    </void>
+    <void property="reference">
+     <string>kfkfkf</string>
+    </void>
+    <void property="titre">
+     <string>jffjjf</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Support.Dvd">
+    <void property="auteur">
+     <string>lflff</string>
+    </void>
+    <void property="bonus">
+     <string>fkfkf</string>
+    </void>
+    <void property="duree">
+     <string>fkf</string>
+    </void>
+    <void property="reference">
+     <string>ffkfk</string>
+    </void>
+    <void property="titre">
+     <string>fkfkf</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Support.CD">
+    <void property="auteur">
+     <string>fkfk</string>
+    </void>
+    <void property="duree">
+     <string>ffkf</string>
+    </void>
+    <void property="nbPlage">
+     <int>3</int>
+    </void>
+    <void property="reference">
+     <string>fkfk</string>
+    </void>
+    <void property="titre">
+     <string>kfkfk</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Support.Livre">
+    <void property="auteur">
+     <string>fffkf</string>
+    </void>
+    <void property="nbPage">
+     <int>34</int>
+    </void>
+    <void property="reference">
+     <string>fkfkfk</string>
+    </void>
+    <void property="titre">
+     <string>fkfkfk</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Support.Dvd">
+    <void property="auteur">
+     <string>fflflf</string>
+    </void>
+    <void property="bonus">
+     <string>fkkffkf</string>
+    </void>
+    <void property="duree">
+     <string>345</string>
+    </void>
+    <void property="reference">
+     <string>fkfkf</string>
+    </void>
+    <void property="titre">
+     <string>fffkf</string>
+    </void>
+   </object>
+  </void>
  </object>
 </java>

@@ -65,25 +65,33 @@ public class Menu {
         String question = "Que voulez créer ?\n1- Livre\n2- DVD\n3- CD\n0- STOP";
         Integer userChoice = Utils.scanInteger(question);
         while (userChoice != 0) {
+        	Support s = null;
             switch (userChoice) {
                 case 1:
-                    supports.add(new Livre(true));
+                	s = new Livre();
                     break;
                 case 2:
-                    supports.add(new Dvd(true));
+                	s = new Dvd();
                     break;
                 case 3:
-                    supports.add(new CD(true));
+                	s = new CD();
                     break;
                 default:
-                    supports.add(new Multimedia(true));
+//                    supports.add(new Multimedia());
                     break;
             }
+            if(s instanceof Support) {
+            	s.fillSupport();
+                supports.add(s);
+            }
+            
             userChoice = Utils.scanInteger(question);
         }
     }
 
-    public void load() throws IOException {
+    //l'objet que je lis dans mon fichier XML est forcément une ArrayList<Support>
+    @SuppressWarnings("unchecked")
+	public void load() throws IOException {
     	//crée un flux de lecture depuis un fichier nommé bdd.xml s'il existe
         FileInputStream fis = new FileInputStream("bdd.xml");
         XMLDecoder decoder = new XMLDecoder(fis);

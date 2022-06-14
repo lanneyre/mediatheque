@@ -6,6 +6,8 @@ public class App {
     public static void main(String[] args) /*throws Exception*/ {//throws Exception renvoie le problème au niveau au-dessus : autant que possible, JAMAIS sur un main !
         Menu menu = new Menu();
         menu.start();
+    	
+    	//
         // menu.load();
         // System.out.println(menu.supports);
 
